@@ -17,7 +17,8 @@ requirements:
 
 test:
     commands:
-        - exit $(test -f ${PREFIX}/lib/libuuid.a)  # [not win]
+        - test -f ${PREFIX}/lib/libuuid.a  # [unix]
+        - conda inspect linkages -n _test libuuid  # [linux]
 
 about:
     home: http://sourceforge.net/projects/libuuid/

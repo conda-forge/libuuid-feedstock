@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libuuid-feedstock.svg?s
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/libuuid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libuuid-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/libuuid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/libuuid-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libuuid/badges/version.svg)](https://anaconda.org/conda-forge/libuuid)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libuuid/badges/downloads.svg)](https://anaconda.org/conda-forge/libuuid)
+
 
 Updating libuuid-feedstock
 ==========================
