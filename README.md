@@ -5,7 +5,7 @@ Home: http://sourceforge.net/projects/libuuid/
 
 Package license: BSD
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Portable uuid C library
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libuuid-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/libuuid-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/libuuid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libuuid-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/libuuid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/libuuid-feedstock/branch/master)
