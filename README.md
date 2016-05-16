@@ -3,7 +3,7 @@ About libuuid
 
 Home: http://sourceforge.net/projects/libuuid/
 
-Package license: BSD
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
