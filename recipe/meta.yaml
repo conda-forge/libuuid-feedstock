@@ -13,6 +13,9 @@ source:
 build:
     number: 0
     skip: True  # [win]
+    run_exports:
+        # https://abi-laboratory.pro/index.php?view=timeline&l=util-linux
+        - {{ pin_subpackage('libuuid') }}
 
 requirements:
     build:
