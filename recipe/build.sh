@@ -1,7 +1,9 @@
 #!/bin/bash
 
-bash configure --prefix=$PREFIX
+bash configure --prefix=$PREFIX --disable-all-programs --enable-libuuid
 
 make
-make check
+make tests
 make install
+
+rm -fr $PREFIX/share

@@ -1,4 +1,5 @@
-{% set version = "1.0.3" %}
+{% set major_minor = "2.32" %}
+{% set version = major_minor + ".1" %}
 
 package:
     name: libuuid
@@ -6,12 +7,19 @@ package:
 
 source:
     fn: libuuid-{{ version }}.tar.gz
-    url: https://sourceforge.mirrorservice.org/l/li/libuuid/libuuid-{{ version }}.tar.gz
-    sha256: 46af3275291091009ad7f1b899de3d0cea0252737550e7919d17237997db5644
+    url: https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v{{ major_minor }}/util-linux-{{ version }}.tar.gz
+    sha256: 3bbf9f3d4a33d6653cf0f7e4fc422091b6a38c3b1195c0ee716c67148a1a7122
 
 build:
-    number: 1
+    number: 0
     skip: True  # [win]
+    run_exports:
+        # https://abi-laboratory.pro/index.php?view=timeline&l=util-linux
+        - {{ pin_subpackage('libuuid') }}
+
+requirements:
+    build:
+        - {{ compiler('c') }}
 
 test:
     commands:
