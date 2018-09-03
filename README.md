@@ -7,7 +7,7 @@ Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Portable uuid C library.
+Summary: Portable uuid C library
 
 
 
