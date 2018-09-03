@@ -3,11 +3,11 @@ About libuuid
 
 Home: http://sourceforge.net/projects/libuuid/
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Portable uuid C library.
+Summary: Portable uuid C library
 
 
 
