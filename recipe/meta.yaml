@@ -19,17 +19,18 @@ build:
 
 requirements:
     build:
+        - gnuconfig  # [unix]
         - {{ compiler('c') }}
         - make  # [unix]
 
 test:
     commands:
         - test -f ${PREFIX}/lib/libuuid.a  # [unix]
-        - conda inspect linkages libuuid  # [unix]
 
 about:
     home: http://sourceforge.net/projects/libuuid/
-    license: BSD 3-Clause
+    license: BSD-3-Clause
+    license_file: Documentation/licenses/COPYING.BSD-3
     summary: 'Portable uuid C library.'
 
 extra:
