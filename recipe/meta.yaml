@@ -29,7 +29,8 @@ test:
 
 about:
     home: http://sourceforge.net/projects/libuuid/
-    license: BSD 3-Clause
+    license: BSD-3-Clause
+    license_file: Documentation/licenses/COPYING.BSD-3
     summary: 'Portable uuid C library.'
 
 extra:
