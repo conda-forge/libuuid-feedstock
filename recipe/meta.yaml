@@ -25,12 +25,14 @@ requirements:
 
 test:
     commands:
-        - test -f ${PREFIX}/lib/libuuid.a  # [unix]
+        - test -f ${PREFIX}/lib/libuuid.a      # [unix]
+        - test -f ${PREFIX}/lib/libuuid.so     # [linux]
+        - test -f ${PREFIX}/lib/libuuid.dylib  # [osx]
 
 about:
     home: http://sourceforge.net/projects/libuuid/
     license: BSD-3-Clause
-    license_file: Documentation/licenses/COPYING.BSD-3
+    license_file: LICENSE
     summary: 'Portable uuid C library.'
 
 extra:
