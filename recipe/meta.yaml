@@ -25,9 +25,8 @@ requirements:
 
 test:
     commands:
-        - test -f ${PREFIX}/lib/libuuid.a      # [unix]
-        - test -f ${PREFIX}/lib/libuuid.so     # [linux]
-        - test -f ${PREFIX}/lib/libuuid.dylib  # [osx]
+        - test -f ${PREFIX}/lib/libuuid.a  # [not win]
+        - test -f ${PREFIX}/lib/libuuid${SHLIB_EXT}  # [not win]
 
 about:
     home: http://sourceforge.net/projects/libuuid/
