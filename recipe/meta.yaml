@@ -1,14 +1,13 @@
-{% set major_minor = "2.38" %}
-{% set version = major_minor + ".1" %}
+{% set version = "2.41" %}
 
 package:
     name: libuuid
     version: {{ version }}
 
 source:
-    fn: libuuid-{{ version }}.tar.gz
-    url: https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v{{ major_minor }}/util-linux-{{ version }}.tar.gz
-    sha256: 0820eb8eea90408047e3715424bc6be771417047f683950fecb4bdd2e2cbbc6e
+    # use github mirror to make it easier for bot to scrape for new versions
+    url: https://github.com/util-linux/util-linux/archive/refs/tags/v{{ version }}.tar.gz
+    sha256: 277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
 
 build:
     number: 0
