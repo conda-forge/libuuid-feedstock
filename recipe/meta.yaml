@@ -22,6 +22,7 @@ requirements:
         - automake  # [unix]
         - bison     # [unix]
         - flex      # [unix]
+        - gettext   # [unix]
         - libtool   # [unix]
         - gnuconfig  # [unix]
         - {{ stdlib('c') }}
