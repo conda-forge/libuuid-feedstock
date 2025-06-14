@@ -19,6 +19,7 @@ build:
 requirements:
     build:
         - gnuconfig  # [unix]
+        - {{ stdlib('c') }}
         - {{ compiler('c') }}
         - make  # [unix]
 
