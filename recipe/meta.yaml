@@ -23,6 +23,7 @@ requirements:
         - bison     # [unix]
         - flex      # [unix]
         - gettext   # [unix]
+        - libiconv  # [unix]
         - libtool   # [unix]
         - gnuconfig  # [unix]
         - {{ stdlib('c') }}
