@@ -20,6 +20,9 @@ requirements:
     build:
         - autoconf  # [unix]
         - automake  # [unix]
+        - bison     # [unix]
+        - flex      # [unix]
+        - libtool   # [unix]
         - gnuconfig  # [unix]
         - {{ stdlib('c') }}
         - {{ compiler('c') }}
