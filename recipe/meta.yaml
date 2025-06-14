@@ -22,7 +22,7 @@ requirements:
         - automake  # [unix]
         - bison     # [unix]
         - flex      # [unix]
-        - gettext   # [unix]
+        - gettext-tools  # [unix]
         - libiconv  # [unix]
         - libtool   # [unix]
         - gnuconfig  # [unix]
