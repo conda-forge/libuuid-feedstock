@@ -10,6 +10,9 @@ source:
     sha256: 277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
     patches:
       - darwin_libtoolize.patch
+      # Likely already fixed in the version after 2.41
+      # https://github.com/util-linux/util-linux/commit/bbfbd64e3f00c548016c8b8292ff0cb841e681f0
+      - fix-uuid_time_on_macos_without_attribute_alias.patch
 
 build:
     number: 0
