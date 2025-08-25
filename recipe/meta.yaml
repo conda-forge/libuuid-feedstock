@@ -1,4 +1,4 @@
-{% set version = "2.41" %}
+{% set version = "2.41.1" %}
 
 package:
     name: libuuid
@@ -7,12 +7,9 @@ package:
 source:
     # use github mirror to make it easier for bot to scrape for new versions
     url: https://github.com/util-linux/util-linux/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 277407acf21815006eb4bb2ee9c2fa2ea6f4f84bfc57486c460c6bc8c77a4445
+    sha256: 61a9785cbf04091286ec2bbfb78e87c35e6380f084f38115a4677b90b9ad4437
     patches:
       - darwin_libtoolize.patch
-      # Likely already fixed in the version after 2.41
-      # https://github.com/util-linux/util-linux/commit/bbfbd64e3f00c548016c8b8292ff0cb841e681f0
-      - fix-uuid_time_on_macos_without_attribute_alias.patch
 
 build:
     number: 0
