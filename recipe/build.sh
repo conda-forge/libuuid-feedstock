@@ -2,6 +2,7 @@
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 
+bash autogen.sh
 bash configure --prefix=$PREFIX --disable-all-programs --enable-libuuid
 
 make
