@@ -38,12 +38,12 @@ requirements:
     - ${{ pin_subpackage('libuuid') }}
 
 tests:
-  package_contents:
-    files:
-      - if: unix
-        then: lib/libuuid.a
-    lib:
-      - uuid
+  - package_contents:
+      files:
+        - if: unix
+          then: lib/libuuid.a
+      lib:
+        - uuid
 
 about:
   license: BSD-3-Clause
