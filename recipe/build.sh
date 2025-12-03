@@ -1,6 +1,6 @@
 #!/bin/bash
 # Get an updated config.sub and config.guess
-cp $PREFIX/share/gnuconfig/config.* ./config
+cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 
 export PYTHON="$BUILD_PREFIX/bin/python"
 
