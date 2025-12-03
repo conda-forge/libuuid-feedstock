@@ -2,6 +2,8 @@
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 
+export PYTHON="$BUILD_PREFIX/bin/python"
+
 bash autogen.sh
 bash configure --prefix=$PREFIX --disable-all-programs --enable-libuuid
 
