@@ -17,7 +17,6 @@ source:
 build:
   number: 1
   skip: win
-  merge_build_and_host_envs: true
 
 requirements:
   build:
@@ -25,7 +24,7 @@ requirements:
     - ${{ stdlib('c') }}
     - if: unix
       then:
-      - python 3.12.*
+      - python
       - autoconf
       - automake
       - bison
