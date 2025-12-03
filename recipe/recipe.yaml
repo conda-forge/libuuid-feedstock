@@ -20,35 +20,30 @@ build:
 
 requirements:
   build:
-    - if: unix
-      then: autoconf
-    - if: unix
-      then: automake
-    - if: unix
-      then: bison
-    - if: unix
-      then: flex
-    - if: unix
-      then: gettext-tools
-    - if: unix
-      then: libiconv
-    - if: unix
-      then: libtool
-    - if: unix
-      then: gnuconfig
-    - ${{ stdlib('c') }}
     - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
     - if: unix
-      then: make
+      then:
+      - autoconf
+      - automake
+      - bison
+      - flex
+      - gettext-tools
+      - libiconv
+      - libtool
+      - gnuconfig
+      - make
+
   run_exports:
     - ${{ pin_subpackage('libuuid') }}
 
 tests:
-  - script:
-      - if: not win
-        then: test -f ${PREFIX}/lib/libuuid.a
-      - if: not win
-        then: test -f ${PREFIX}/lib/libuuid${SHLIB_EXT}
+  package_contents:
+    files:
+      - if: unix
+        then: lib/libuuid.a
+    lib:
+      - uuid
 
 about:
   license: BSD-3-Clause
