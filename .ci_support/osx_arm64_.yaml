@@ -16,8 +16,6 @@ channel_targets:
 - conda-forge main
 libiconv:
 - '1'
-libuuid:
-- '2'
 macos_machine:
 - arm64-apple-darwin20.0.0
 target_platform:
