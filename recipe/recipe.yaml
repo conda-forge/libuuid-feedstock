@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.41.4"
+  version: "2.42"
 
 package:
   name: libuuid
@@ -10,7 +10,7 @@ package:
 source:
   # use github mirror to make it easier for bot to scrape for new versions
   url: https://github.com/util-linux/util-linux/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 1adeacc8898330624e4a569756361f8b9fa73ee09b785fff1eda715149508ad5
+  sha256: ae5db06b513ac5d42b91e131f26aa8b59da6b623eeb948567cc7a7cb2c13ccb2
   patches:
     - darwin_libtoolize.patch
 
