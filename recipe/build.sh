@@ -5,7 +5,7 @@ cp $BUILD_PREFIX/share/gnuconfig/config.* ./config
 export PYTHON="$BUILD_PREFIX/bin/python"
 
 bash autogen.sh
-bash configure --prefix=$PREFIX --disable-all-programs --enable-libuuid
+bash configure --prefix=$PREFIX --disable-all-programs --enable-libuuid --disable-static
 
 make
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
